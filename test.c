@@ -298,8 +298,10 @@ void func_287 (char* input);
 /* FUNCTIONS */
 void target_3(char* input) {
 	/* CRASH HERE!!! */
-	char* buff = malloc(8);
-	putchar(buff[0xffffffff]);
+	int *array = new int[100];
+ 	array[0] = 0;
+  	int res = array[argc + 100];  // BOOM
+	delete [] array;
 }
 
 void func_1(char* input) {
