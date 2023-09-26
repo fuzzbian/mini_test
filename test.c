@@ -298,10 +298,9 @@ void func_287 (char* input);
 /* FUNCTIONS */
 void target_3(char* input) {
 	/* CRASH HERE!!! */
-	int *array = new int[100];
+	int array[100];
  	array[0] = 0;
-  	int res = array[argc + 100];  // BOOM
-	delete [] array;
+  	int res = array[5 + 100];  // BOOM
 }
 
 void func_1(char* input) {
